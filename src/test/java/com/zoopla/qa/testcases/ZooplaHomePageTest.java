@@ -18,7 +18,7 @@ public class ZooplaHomePageTest extends BaseTest {
 		initialization();
 	}
 	
-	@Test
+	@Test(enabled= false)
 	public void verifyZooplaHomePageTitle(){
 		String zooplaHomePageTitle= driver.getTitle();
 		Assert.assertEquals(zooplaHomePageTitle, prop.getProperty("ZooplaHomePageTitle"));

@@ -3,6 +3,7 @@
   <test name="Zoopla Web App Automation Tests" >
     <classes>
        <class name="com.zoopla.qa.testcases.ZooplaHomePageTest" />
+       <class name="com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest"/>
     </classes>
   </test>
 </suite>

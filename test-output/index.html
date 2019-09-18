@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite">
-              <span class="suite-name border-passed">Zoopla Web App Automation Test Suite</span>
+              <span class="suite-name border-failed">Zoopla Web App Automation Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" class="hide-methods passed suite-Zoopla_Web_App_Automation_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Zoopla_Web_App_Automation_Test_Suite -->
-                      <a href="#" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" class="show-methods passed suite-Zoopla_Web_App_Automation_Test_Suite"> (show)</a> <!-- show-methods passed suite-Zoopla_Web_App_Automation_Test_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" class="hide-methods failed suite-Zoopla_Web_App_Automation_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Zoopla_Web_App_Automation_Test_Suite -->
+                      <a href="#" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" class="show-methods failed suite-Zoopla_Web_App_Automation_Test_Suite"> (show)</a> <!-- show-methods failed suite-Zoopla_Web_App_Automation_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Zoopla_Web_App_Automation_Test_Suite">
+                    <div class="method-list-content failed suite-Zoopla_Web_App_Automation_Test_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" title="com.zoopla.qa.testcases.ZooplaHomePageTest" hash-for-method="verifyPropertyForSalePageBasedOnLocationTest">verifyPropertyForSalePageBasedOnLocationTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" title="com.zoopla.qa.testcases.ZooplaHomePageTest" hash-for-method="verifyZooplaHomePageTitle">verifyZooplaHomePageTitle</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" title="com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest" hash-for-method="verifyToSelectTheLocationBasedOnPosition">verifyToSelectTheLocationBasedOnPosition</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Zoopla_Web_App_Automation_Test_Suite -->
+                    </div> <!-- method-list-content failed suite-Zoopla_Web_App_Automation_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Zoopla_Web_App_Automation_Test_Suite" class="panel Zoopla_Web_App_Automation_Test_Suite">
-          <div class="suite-Zoopla_Web_App_Automation_Test_Suite-class-passed">
+          <div class="suite-Zoopla_Web_App_Automation_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.zoopla.qa.testcases.ZooplaHomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,17 +133,64 @@
                   <a name="verifyPropertyForSalePageBasedOnLocationTest">
                   </a> <!-- verifyPropertyForSalePageBasedOnLocationTest -->
                   <span class="method-name">verifyPropertyForSalePageBasedOnLocationTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyZooplaHomePageTitle">
-                  </a> <!-- verifyZooplaHomePageTitle -->
-                  <span class="method-name">verifyZooplaHomePageTitle</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element reference of &lt;li class=&quot;ui-menu-item&quot;&gt; is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HIBAIL55565&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 6320, moz:profile: C:\Users\inrahmed\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1a903112-6e49-4435-bcb8-ac805b681ff0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.zoopla.qa.pages.ZooplaHomePage.searchForLocationInHomePage(ZooplaHomePage.java:36)
+	at com.zoopla.qa.testcases.ZooplaHomePageTest.verifyPropertyForSalePageBasedOnLocationTest(ZooplaHomePageTest.java:31)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Zoopla_Web_App_Automation_Test_Suite-class-passed -->
+          </div> <!-- suite-Zoopla_Web_App_Automation_Test_Suite-class-failed -->
+          <div class="suite-Zoopla_Web_App_Automation_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyToSelectTheLocationBasedOnPosition">
+                  </a> <!-- verifyToSelectTheLocationBasedOnPosition -->
+                  <span class="method-name">verifyToSelectTheLocationBasedOnPosition</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a class=&quot;listing-results-price text-price&quot; href=&quot;/for-sale/details/52767738?search_identifier=6323219902a84fc51cd97861178ef6ce&quot;&gt; is not clickable at point (734,739) because another element &lt;img class=&quot; lazy&quot;&gt; obscures it
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HIBAIL55565&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190705220548, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 11124, moz:profile: C:\Users\inrahmed\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c18e2600-2890-4c3f-b11a-71bc08377699
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.zoopla.qa.pages.ZooplaPropertyForSalePage.getPropertyByPosition(ZooplaPropertyForSalePage.java:51)
+	at com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest.verifyToSelectTheLocationBasedOnPosition(ZooplaPropertyForSalePageTest.java:44)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zoopla_Web_App_Automation_Test_Suite-class-failed -->
         </div> <!-- panel Zoopla_Web_App_Automation_Test_Suite -->
         <div panel-name="test-xml-Zoopla_Web_App_Automation_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -157,6 +204,7 @@
   &lt;test name=&quot;Zoopla Web App Automation Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.zoopla.qa.testcases.ZooplaHomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Zoopla Web App Automation Tests --&gt;
 &lt;/suite&gt; &lt;!-- Zoopla Web App Automation Test Suite --&gt;
@@ -170,7 +218,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Zoopla Web App Automation Tests (1 class)</span>
+                <span class="test-name">Zoopla Web App Automation Tests (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,18 +246,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPropertyForSalePageBasedOnLocationTest')
-data.setCell(0, 2, 'com.zoopla.qa.testcases.ZooplaHomePageTest')
-data.setCell(0, 3, 9509);
+data.setCell(0, 1, 'verifyToSelectTheLocationBasedOnPosition')
+data.setCell(0, 2, 'com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest')
+data.setCell(0, 3, 3144);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyZooplaHomePageTitle')
+data.setCell(1, 1, 'verifyPropertyForSalePageBasedOnLocationTest')
 data.setCell(1, 2, 'com.zoopla.qa.testcases.ZooplaHomePageTest')
-data.setCell(1, 3, 21);
+data.setCell(1, 3, 1771);
 window.suiteTableData['Zoopla_Web_App_Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Zoopla_Web_App_Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Zoopla_Web_App_Automation_Test_Suite">
               </div> <!-- times-div-Zoopla_Web_App_Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -224,9 +272,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Zoopla_Web_App_Automation_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zoopla.qa.testcases.ZooplaHomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyZooplaHomePageTitle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Zoopla_Web_App_Automation_Test_Suite" class="panel">
@@ -241,24 +296,31 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyPropertyForSalePageBasedOnLocationTest</span>
-                <span class="method-start">16258 ms</span>
+                <span class="method-start">20794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25769 ms</span>
+                <span class="method-start">22575 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition</span>
-                <span class="method-start">26831 ms</span>
+                <span class="method-start">28869 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyZooplaHomePageTitle</span>
-                <span class="method-start">42754 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyToSelectTheLocationBasedOnPosition</span>
+                <span class="method-start">45826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42777 ms</span>
+                <span class="method-start">48992 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

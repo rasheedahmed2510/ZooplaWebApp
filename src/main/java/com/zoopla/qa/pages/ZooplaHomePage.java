@@ -1,6 +1,7 @@
 package com.zoopla.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -15,10 +16,10 @@ public class ZooplaHomePage extends BaseTest {
 	@FindBy(xpath="//input[@id='search-input-location']")
 	private WebElement SearchInputLocation;
 	
-	@FindBy(xpath="(//li[@class='ui-menu-item']/a)[1]")
+	@FindBy(xpath="(//li[@class='ui-menu-item'])[1]")
 	private WebElement SelectFirstOptionFromInputSearch;
 	
-	@FindBy(xpath="//button[@id='search-submit']")
+	@FindBy(xpath="//button[text()='Search']")
 	private WebElement SearchBtn;
 	
 	//Create a constructor to initialize the current class objects
@@ -28,10 +29,12 @@ public class ZooplaHomePage extends BaseTest {
 	
 	//Action methods for Zoopla Home Page
 	public ZooplaPropertyForSalePage searchForLocationInHomePage(String location){
-		ForSaletab.click();
+		//ForSaletab.click();
+		Actions act = new Actions(driver);
+		act.moveToElement(SearchInputLocation).perform();
 		SearchInputLocation.sendKeys(location);
 		SelectFirstOptionFromInputSearch.click();
-		SearchBtn.click();
+		SearchBtn.submit();
 		return new ZooplaPropertyForSalePage();	
 	}
 	
