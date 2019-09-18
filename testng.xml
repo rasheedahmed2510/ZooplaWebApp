@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Zoopla Web App Automation Test Suite" verbose="1" >
+  <test name="Zoopla Web App Automation Tests" >
+    <classes>
+       <class name="com.zoopla.qa.testcases.ZooplaHomePageTest" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Zoopla Web App Automation Test Suite" duration-ms="43820" started-at="2019-09-18T10:56:03Z" finished-at="2019-09-18T10:56:47Z">
+    <groups>
+    </groups>
+    <test name="Zoopla Web App Automation Tests" duration-ms="43820" started-at="2019-09-18T10:56:03Z" finished-at="2019-09-18T10:56:47Z">
+      <class name="com.zoopla.qa.testcases.ZooplaHomePageTest">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.zoopla.qa.testcases.ZooplaHomePageTest@204f30ec]" name="preCondition" is-config="true" duration-ms="16258" started-at="2019-09-18T16:26:03Z" finished-at="2019-09-18T16:26:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyPropertyForSalePageBasedOnLocationTest()[pri:0, instance:com.zoopla.qa.testcases.ZooplaHomePageTest@204f30ec]" name="verifyPropertyForSalePageBasedOnLocationTest" duration-ms="9509" started-at="2019-09-18T16:26:20Z" finished-at="2019-09-18T16:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPropertyForSalePageBasedOnLocationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.testcases.ZooplaHomePageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="1062" started-at="2019-09-18T16:26:29Z" finished-at="2019-09-18T16:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.zoopla.qa.testcases.ZooplaHomePageTest@204f30ec]" name="preCondition" is-config="true" duration-ms="15923" started-at="2019-09-18T16:26:30Z" finished-at="2019-09-18T16:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="verifyZooplaHomePageTitle()[pri:0, instance:com.zoopla.qa.testcases.ZooplaHomePageTest@204f30ec]" name="verifyZooplaHomePageTitle" duration-ms="21" started-at="2019-09-18T16:26:46Z" finished-at="2019-09-18T16:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyZooplaHomePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.testcases.ZooplaHomePageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="998" started-at="2019-09-18T16:26:46Z" finished-at="2019-09-18T16:26:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoopla.qa.testcases.ZooplaHomePageTest -->
+    </test> <!-- Zoopla Web App Automation Tests -->
+  </suite> <!-- Zoopla Web App Automation Test Suite -->
+</testng-results>

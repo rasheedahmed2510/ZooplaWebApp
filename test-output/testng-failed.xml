@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Zoopla Web App Automation Test Suite]">
+  <test name="Zoopla Web App Automation Tests(failed)">
+    <classes>
+      <class name="com.zoopla.qa.testcases.ZooplaHomePageTest">
+        <methods>
+          <include name="verifyPropertyForSalePageBasedOnLocationTest"/>
+          <include name="tearDown"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.zoopla.qa.testcases.ZooplaHomePageTest -->
+    </classes>
+  </test> <!-- Zoopla Web App Automation Tests(failed) -->
+</suite> <!-- Failed suite [Zoopla Web App Automation Test Suite] -->
