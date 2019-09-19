@@ -5,20 +5,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.zoopla.qa.base.BaseTest;
-import com.zoopla.qa.pages.ZooplaHomePage;
-import com.zoopla.qa.pages.ZooplaPropertyDetailPage;
-import com.zoopla.qa.pages.ZooplaPropertyForSalePage;
+import com.zoopla.qa.pages.HomePage;
+import com.zoopla.qa.pages.PropertyDetailPage;
+import com.zoopla.qa.pages.PropertyForSalePage;
 
-public class ZooplaPropertyForSalePageTest extends BaseTest{
+public class PropertyForSalePageTest extends BaseTest{
 		
-	ZooplaHomePage homePage;
-	ZooplaPropertyForSalePage propForSale;
-	ZooplaPropertyDetailPage propDetail;
+	HomePage homePage;
+	PropertyForSalePage propForSale;
+	PropertyDetailPage propDetail;
 	
 	@BeforeMethod
 	public void preCondition(){
 		initialization();
-		homePage = new ZooplaHomePage();
+		homePage = new HomePage();
 		propForSale = homePage.searchForLocationInHomePage(prop.getProperty("Location"));
 	}
 	
@@ -30,19 +30,19 @@ public class ZooplaPropertyForSalePageTest extends BaseTest{
 	}*/
 	
 	
-	/*@Test
-	public void verifyToSortThePropertyPriceListInDescendingOrderTest(){
-		propForSale = new ZooplaPropertyForSalePage();
-		propForSale.getPropertyPriceListInDescendingOrder();
-	}*/
-	
 	@Test
+	public void verifyToSortThePropertyPriceListInDescendingOrderTest(){
+		propForSale = new PropertyForSalePage();
+		propForSale.getPropertyPriceListInDescendingOrder();
+	}
+	
+	/*@Test
 	public void verifyToSelectTheLocationBasedOnPosition(){
-		propForSale = new ZooplaPropertyForSalePage();
-		propDetail = new ZooplaPropertyDetailPage();
+		propForSale = new PropertyForSalePage();
+		propDetail = new PropertyDetailPage();
 		String agentNameInPropDetailPage= propForSale.getAgentNameBasedOnProperty();
 		propDetail = propForSale.getPropertyByPosition(5);
-	}
+	}*/
 	
 	@AfterMethod
 	public void tearDown(){

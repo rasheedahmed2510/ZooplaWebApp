@@ -3,20 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Zoopla Web App Automation Test Suite]">
   <test name="Zoopla Web App Automation Tests(failed)">
     <classes>
-      <class name="com.zoopla.qa.testcases.ZooplaHomePageTest">
+      <class name="com.zoopla.qa.testcases.AgentDetailPageTest">
         <methods>
-          <include name="verifyPropertyForSalePageBasedOnLocationTest"/>
-          <include name="tearDown"/>
-          <include name="preCondition"/>
-        </methods>
-      </class> <!-- com.zoopla.qa.testcases.ZooplaHomePageTest -->
-      <class name="com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest">
-        <methods>
-          <include name="verifyToSelectTheLocationBasedOnPosition"/>
           <include name="preCondition"/>
           <include name="tearDown"/>
+          <include name="verifyAgentNameTest"/>
         </methods>
-      </class> <!-- com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest -->
+      </class> <!-- com.zoopla.qa.testcases.AgentDetailPageTest -->
     </classes>
   </test> <!-- Zoopla Web App Automation Tests(failed) -->
 </suite> <!-- Failed suite [Zoopla Web App Automation Test Suite] -->

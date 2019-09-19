@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.zoopla.qa.base.BaseTest;
 
-public class ZooplaPropertyForSalePage extends BaseTest{
+public class PropertyForSalePage extends BaseTest{
 	
 	//Object Repository
 	@FindBy(xpath="//h1[contains(text(),'Property for sale in')]")
@@ -23,7 +23,7 @@ public class ZooplaPropertyForSalePage extends BaseTest{
 	List<Integer> priceList = new ArrayList<Integer>();
 	
 	//Create a constructor to initialize the current class objects
-	public ZooplaPropertyForSalePage(){
+	public PropertyForSalePage(){
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -36,10 +36,10 @@ public class ZooplaPropertyForSalePage extends BaseTest{
 		log.info("The total no: of properties listed in the Property for sale page are: "+ PropertyPriceList.size());
 		for(WebElement propertyPrice: PropertyPriceList){
 			//Except nos: remove all other data, ^ represents except
-			if(propertyPrice.getText().replaceAll("[a-zA-Z]", "").isEmpty()){
+			if(propertyPrice.getText().replaceAll("[^0-9]", "").isEmpty()){
 				System.out.println("The property has price which is empty "+propertyPrice.getText()+" was not added to the list");
 			}else{
-				priceList.add(Integer.parseInt(propertyPrice.getText().replaceAll("[a-zA-Z]", "")));
+				priceList.add(Integer.parseInt(propertyPrice.getText().replaceAll("[^0-9]", "")));
 			}
 			System.out.println("The propert price list in descending order is: -->");
 			Collections.sort(priceList, Collections.reverseOrder());
@@ -47,9 +47,9 @@ public class ZooplaPropertyForSalePage extends BaseTest{
 		}
 	}
 	
-	public ZooplaPropertyDetailPage getPropertyByPosition(int position){
+	public PropertyDetailPage getPropertyByPosition(int position){
 		PropertyPriceList.get(position).click();
-		return new ZooplaPropertyDetailPage();
+		return new PropertyDetailPage();
 	}
 	
 	public String getAgentNameBasedOnProperty(){

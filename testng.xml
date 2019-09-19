@@ -2,8 +2,10 @@
 <suite name="Zoopla Web App Automation Test Suite" verbose="1" >
   <test name="Zoopla Web App Automation Tests" >
     <classes>
-       <class name="com.zoopla.qa.testcases.ZooplaHomePageTest" />
-       <class name="com.zoopla.qa.testcases.ZooplaPropertyForSalePageTest"/>
+       <class name="com.zoopla.qa.testcases.HomePageTest"/>
+       <class name="com.zoopla.qa.testcases.PropertyForSalePageTest"/>
+       <class name="com.zoopla.qa.testcases.PropertyDetailPageTest"/>
+       <class name="com.zoopla.qa.testcases.AgentDetailPageTest"/>
     </classes>
   </test>
 </suite>

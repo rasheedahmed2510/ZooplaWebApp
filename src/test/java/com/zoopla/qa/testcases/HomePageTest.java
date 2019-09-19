@@ -5,20 +5,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.zoopla.qa.base.BaseTest;
-import com.zoopla.qa.pages.ZooplaPropertyForSalePage;
-import com.zoopla.qa.pages.ZooplaHomePage;
+import com.zoopla.qa.pages.PropertyForSalePage;
+import com.zoopla.qa.pages.HomePage;
 
-public class ZooplaHomePageTest extends BaseTest {
+public class HomePageTest extends BaseTest {
 	
-	ZooplaHomePage homePage;
-	ZooplaPropertyForSalePage propForSalePage;
+	HomePage homePage;
+	PropertyForSalePage propForSalePage;
 	
 	@BeforeMethod
 	public void preCondition(){
 		initialization();
 	}
 	
-	@Test(enabled= false)
+	@Test
 	public void verifyZooplaHomePageTitle(){
 		String zooplaHomePageTitle= driver.getTitle();
 		Assert.assertEquals(zooplaHomePageTitle, prop.getProperty("ZooplaHomePageTitle"));
@@ -26,8 +26,8 @@ public class ZooplaHomePageTest extends BaseTest {
 	
 	@Test
 	public void verifyPropertyForSalePageBasedOnLocationTest(){
-		homePage= new ZooplaHomePage();
-		propForSalePage= new ZooplaPropertyForSalePage();
+		homePage= new HomePage();
+		propForSalePage= new PropertyForSalePage();
 		propForSalePage= homePage.searchForLocationInHomePage(prop.getProperty("Location"));
 		Assert.assertTrue(propForSalePage.verifyLocation(prop.getProperty("Location")));
 	}
