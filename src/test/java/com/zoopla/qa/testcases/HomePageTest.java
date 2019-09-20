@@ -9,7 +9,7 @@ import com.zoopla.qa.base.BaseTest;
 import com.zoopla.qa.pages.PropertyForSalePage;
 import com.zoopla.qa.pages.HomePage;
 
-@Listeners(com.zoopla.qa.analyzer.TestListener.class)
+@Listeners(com.zoopla.qa.retryanalyzer.TestListener.class)
 public class HomePageTest extends BaseTest {
 	
 	HomePage homePage;

@@ -1,4 +1,4 @@
-package com.zoopla.qa.analyzer;
+package com.zoopla.qa.retryanalyzer;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

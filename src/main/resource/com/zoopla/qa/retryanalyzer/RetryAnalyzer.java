@@ -1,4 +1,4 @@
-package com.zoopla.qa.analyzer;
+package com.zoopla.qa.retryanalyzer;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

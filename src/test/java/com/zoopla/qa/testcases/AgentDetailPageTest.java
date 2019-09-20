@@ -11,7 +11,7 @@ import com.zoopla.qa.pages.HomePage;
 import com.zoopla.qa.pages.PropertyDetailPage;
 import com.zoopla.qa.pages.PropertyForSalePage;
 
-@Listeners(com.zoopla.qa.analyzer.TestListener.class)
+@Listeners(com.zoopla.qa.retryanalyzer.TestListener.class)
 public class AgentDetailPageTest extends BaseTest {
 	
 	HomePage homePage;
