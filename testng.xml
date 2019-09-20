@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Zoopla Web App Automation Test Suite" verbose="1" >
+  <listeners>
+ 		<listener class-name="com.zoopla.qa.analyzer.AnnotationTransformer"/>
+  </listeners>
   <test name="Zoopla Web App Automation Tests" >
     <classes>
        <class name="com.zoopla.qa.testcases.HomePageTest"/>
